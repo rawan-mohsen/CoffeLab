@@ -33,6 +33,7 @@ body {
 .clearfix {
     clear: both;
 }
+
 /**************End global***************** */
 .intro {
     background-color: var(--main-text);
@@ -42,11 +43,21 @@ body {
     background-position: center;
     height: 600px;
     padding-top: 5px;
+    position: relative;
+}
+
+.intro::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #5050505d
 }
 
 .introContent {
     display: flex;
     padding-left: 3%;
+    z-index: 1;
+    position: relative;
 }
 
 .koppee {
@@ -85,6 +96,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 1;
     padding-top: 13%;
 }
 
@@ -115,4 +128,3 @@ body {
     font-weight: 600;
     margin: 1%;
 }
-
