@@ -33,7 +33,7 @@ body {
 .clearfix {
     clear: both;
 }
-
+/**************End global***************** */
 .intro {
     background-color: var(--main-text);
     background-image: url(../images/carousel-1.jpg);
