@@ -36,7 +36,7 @@ body {
 
 .intro {
     background-color: var(--main-text);
-    background-image: url(../imgss/carousel-1.jpg);
+    background-image: url(../images/carousel-1.jpg);
     background-attachment: scroll;
     background-size: cover;
     background-position: center;
