@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Prosto+One&display=swap");
+
+
+:root {
+    --main-text: hsl(11deg 27% 16%);
+    --second-text: #d99c55;
+    --third-text: #b2b7b6;
+    --main-background: #fffbf2;
+    --button-color: #da9f5b;
+    --main-font: 'Prosto One', cursive;
+    --second-font: 'Roboto', sans-serif;
+    --third-font: 'Sofia Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    /* position: relative; */
+    background-color: var(--main-background);
+    color: var(--text-main);
+    font-family: var(--second-font);
+    height: 15000px;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.intro {
+    background-color: var(--main-text);
+    background-image: url(../imgss/carousel-1.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    padding-top: 5px;
+}
+
+.introContent {
+    display: flex;
+    padding-left: 3%;
+}
+
+.koppee {
+    color: white;
+    font-family: var(--third-font);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.headIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.home {
+    color: var(--second-text);
+
+}
+
+
+.home,
+.about,
+.service,
+.menu,
+.pages,
+.contact {
+    color: white;
+    font-family: var(--third-font);
+    text-transform: capitalize;
+    margin: 2%;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 13%;
+}
+
+.serv {
+    color: var(--button-color);
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1%;
+}
+
+.coffee,
+.date {
+    color: white;
+}
+
+.coffee {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
+.date {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1%;
+}
+
