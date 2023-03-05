@@ -4,7 +4,8 @@
 :root {
     --main-text: hsl(11deg 27% 16%);
     --second-text: #d99c55;
-    --third-text: #b2b7b6;
+    --third-text: #a6a8a8;
+    ;
     --main-background: #fffbf2;
     --button-color: #da9f5b;
     --main-font: 'Prosto One', cursive;
@@ -28,14 +29,15 @@ body {
 .container {
     width: 70%;
     margin: auto;
+    display: flex;
 }
 
 .clearfix {
     clear: both;
 }
+
 /**************End global***************** */
 .intro {
-    background-color: var(--main-text);
     background-image: url(../images/carousel-1.jpg);
     background-attachment: scroll;
     background-size: cover;
@@ -116,3 +118,364 @@ body {
     margin: 1%;
 }
 
+
+.line {
+    border-left: 3px solid var(--second-text);
+    height: 8%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: 5%;
+}
+
+section.outlook {
+    padding-bottom: 10%;
+}
+
+.aboutUs {
+    color: var(--second-text);
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    justify-content: center;
+    display: flex;
+    padding-top: 10%;
+}
+
+.startDate {
+    color: var(--main-text);
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+
+.story,
+.vision {
+    width: 40%;
+}
+
+
+.ourStory,
+.ourVision {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-top: 25%;
+    padding-bottom: 10%;
+}
+
+img {
+    border-style: none;
+    width: 50%;
+    height: 10%;
+}
+
+.storyDesc {
+    color: var(--main-text);
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-bottom: 10%;
+}
+
+.description,
+.visionDesc {
+    color: var(--third-text);
+    font-size: 1.1rem;
+}
+
+.more {
+    border: 2px solid var(--main-text);
+    text-align: center;
+    width: 40%;
+    height: 6%;
+    display: flex;
+    background-color: var(--main-text);
+    color: white;
+    text-transform: capitalize;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+
+li {
+    color: var(--main-text);
+    text-transform: capitalize;
+    font-weight: 600;
+    list-style-type: none;
+    margin-left: -15%;
+}
+
+.moreRight {
+    border: 2px solid var(--button-color);
+    text-align: center;
+    width: 40%;
+    height: 6%;
+    display: flex;
+    background-color: var(--button-color);
+    color: var(--main-text);
+    text-transform: capitalize;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+
+.headBeans {
+    display: flex;
+    height: 1%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.ourServices {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--button-color);
+}
+
+.beans {
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: var(--main-text);
+}
+
+section.inlook {
+    margin-top: 5%;
+}
+
+.quart {
+    display: flex;
+    margin-bottom: 10%;
+    margin-right: 10%;
+}
+
+.firstQuart {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: capitalize;
+    margin-left: 10%;
+}
+
+.title {
+    color: var(--main-text);
+    font-weight: 600;
+}
+
+.firstQuart {
+    display: flex;
+    justify-content: center;
+}
+
+.discount {
+    background-image: url(../images/bg.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.off {
+    color: var(--second-text);
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sundayOff {
+    color: white;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1%;
+    margin-top: 3%;
+}
+
+.addInfo {
+    color: white;
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.box {
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.email {
+    border: 2px solid white;
+    background-color: white;
+    width: 12%;
+}
+
+.sign {
+    border: 2px solid var(--button-color);
+    background-color: var(--button-color);
+    color: var(--main-text);
+    font-size: 1.2rem;
+    width: 5%;
+    text-align: center;
+    padding-top: .5%;
+}
+
+.priceIntro {
+    display: flex;
+    height: 1%;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.price {
+    color: var(--second-text);
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.competitive {
+    color: var(--main-text);
+    text-align: center;
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-top: 2%;
+}
+
+.variety {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.hot,
+.cold {
+    color: var(--main-text);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-bottom: 7%;
+}
+
+.sample {
+    width: 10%;
+    height: 10%;
+    border-radius: 10%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+.thirtyOff {
+    background-image: url(../images/bg.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+    margin-left: 5%;
+}
+
+
+.leftSide {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+ul {
+    padding-top: 5%;
+}
+
+li.side {
+    color: white;
+}
+
+.addInfo.offDisc {
+    margin-top: 5%;
+    text-align: left;
+    width: 70%;
+    font-size: 1.2rem;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 60%;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}                                                                                                                                                     
+
+.book {
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 10%;
+}
+
+.data,
+.bookNow {
+    border: 2px solid var(--second-text);
+    margin: 3%;
+    padding: 2%;
+    text-transform: capitalize;
+    background-color: transparent;
+}
+
+.bookNow {
+    background-color: var(--button-color);
+    text-align: center;
+    color: var(--main-text);
+    font-weight: 600;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+}
+.reviews {
+    display: flex;
+}
+img.client {
+    width: 15%;
+    height: 30%;
+}
