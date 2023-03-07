@@ -355,10 +355,9 @@ section.inlook {
     border: 2px solid var(--button-color);
     background-color: var(--button-color);
     color: var(--main-text);
-    font-size: 1.2rem;
-    width: 5%;
+    width: 70px;
     text-align: center;
-    padding-top: .5%;
+    padding-top: 0.5%;
 }
 
 .priceIntro {
@@ -369,6 +368,7 @@ section.inlook {
 }
 
 .price {
+    padding-top: 30%;
     color: var(--second-text);
     text-align: center;
     font-size: 1.5rem;
@@ -383,7 +383,7 @@ section.inlook {
     font-size: 3rem;
     text-transform: capitalize;
     font-weight: bold;
-    margin-top: 2%;
+    margin-top: 5%;
 }
 
 .variety {
@@ -489,19 +489,134 @@ li.side {
 }
 
 .test {
+    padding-top: 10%;
     display: flex;
     flex-direction: column;
 }
 
+.testimonial {
+    text-align: center;
+    font-size: larger;
+    color: var(--second-text);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.clients {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-top: 2%;
+}
+
 .reviews {
     display: flex;
+    padding: 10%;
 }
 
 img.client {
-    width: 15%;
+    width: 20%;
     height: 30%;
+}
+
+.clientName {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 3%;
+}
+
+.proffession {
+    font-size: .9rem;
+    text-transform: capitalize;
+    font-style: italic;
+    color: #666868;
+}
+
+.sed {
+    width: 85%;
+    word-spacing: 3px;
+    color: #666868;
 }
 
 .coffeeDrop {
     width: 40%;
+}
+
+.bottom {
+    background-image: url(../images/bg.jpg);
+}
+
+.upperBottom {
+    display: flex;
+    align-items: baseline;
+}
+
+.contactTools {
+    width: 20%;
+    margin: 5%;
+}
+
+.getIn, .followUs, .open, .newsletter {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding-bottom: 12%;
+}
+
+.follow {
+    width: 15%;
+    margin: 6%;
+}
+
+.hours {
+    width: 20%;
+    margin: 4%;
+}
+
+.tool {
+    color: white;
+    padding: 2%;
+}
+
+.news {
+    margin: 6%;
+    width: 15%;
+}
+
+span.media {
+    color: white;
+    border: 1px white solid;
+    margin: 1%;
+    padding: 5%;
+}
+
+.info {
+    color: white;
+    font-size: .8rem;
+    padding-bottom: 20%;
+}
+
+.openTime {
+    color: white;
+    text-transform: uppercase;
+}
+
+hr {
+    border: 0.3px var(--button-color) solid;
+    }
+
+    .copyRight, .design {
+        color: white;
+        text-align: center;
+        padding: 0.5%;
+        text-transform: capitalize;
+    }
+
+span.coloredWord {
+    color: var(--second-text);
 }
