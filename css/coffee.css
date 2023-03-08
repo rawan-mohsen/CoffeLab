@@ -28,6 +28,7 @@ body {
     width: 70%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .clearfix {
@@ -392,6 +393,24 @@ section.inlook {
     justify-content: space-around;
     margin-top: 5%;
     margin-bottom: 10%;
+    flex-wrap: wrap;
+}
+
+.variety>.item,
+.variety>.cold,
+.variety>.hot {
+    width: 50%;
+}
+
+.variety>.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.item .item_description {
+    flex-basis: 75%;
+    line-height: 1.5;
 }
 
 .hot,
@@ -400,17 +419,16 @@ section.inlook {
     font-size: 1.5rem;
     text-transform: capitalize;
     font-weight: 600;
-    padding-bottom: 7%;
+    margin-bottom: 30px;
 }
 
 .sample {
-    width: 10%;
-    height: 10%;
-    border-radius: 10%;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10%;
-    -ms-border-radius: 10%;
-    -o-border-radius: 10%;
+    width: 20%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .thirtyOff {
@@ -559,7 +577,10 @@ img.client {
     margin: 5%;
 }
 
-.getIn, .followUs, .open, .newsletter {
+.getIn,
+.followUs,
+.open,
+.newsletter {
     color: white;
     font-size: 1.2rem;
     font-weight: 600;
@@ -608,14 +629,15 @@ span.media {
 
 hr {
     border: 0.3px var(--button-color) solid;
-    }
+}
 
-    .copyRight, .design {
-        color: white;
-        text-align: center;
-        padding: 0.5%;
-        text-transform: capitalize;
-    }
+.copyRight,
+.design {
+    color: white;
+    text-align: center;
+    padding: 0.5%;
+    text-transform: capitalize;
+}
 
 span.coloredWord {
     color: var(--second-text);
