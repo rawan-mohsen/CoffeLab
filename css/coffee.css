@@ -28,6 +28,7 @@ body {
     width: 80%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .clearfix {
@@ -455,6 +456,24 @@ input {
     justify-content: space-around;
     margin: 5% 10%;
     margin-bottom: 10%;
+    flex-wrap: wrap;
+}
+
+.variety>.item,
+.variety>.cold,
+.variety>.hot {
+    width: 50%;
+}
+
+.variety>.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.item .item_description {
+    flex-basis: 75%;
+    line-height: 1.5;
     /* margin-left: 10%; */
 }
 
@@ -473,7 +492,7 @@ input {
     font-size: 1.5rem;
     text-transform: capitalize;
     font-weight: 600;
-    padding-bottom: 7%;
+    margin-bottom: 30px;
 }
 
 .sample {
